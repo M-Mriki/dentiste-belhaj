@@ -366,7 +366,7 @@ footer p strong{color:rgba(255,255,255,.6)}
   .hero-desc{max-width:100%}
   .hero-actions{justify-content:center}
   .hero-stats{justify-content:center}
-  .hero-visual{display:none}
+  /* .hero-visual{display:none} */
   .about-wrap{grid-template-columns:1fr}
   .about-imgs{min-height:340px}
   .svc-grid{grid-template-columns:1fr 1fr}
@@ -374,6 +374,10 @@ footer p strong{color:rgba(255,255,255,.6)}
   .gal-item.tall{grid-row:span 1}
   .testi-grid{grid-template-columns:1fr 1fr}
   .booking-wrap{grid-template-columns:1fr}
+  .localisation-grid{grid-template-columns:1fr !important}
+  .bk-form{
+    padding: 1.3rem;
+  }
 }
 @media(max-width:600px){
   .svc-grid{grid-template-columns:1fr}
@@ -540,3 +544,38 @@ squares{0%{-webkit-transform:scale(1);transform:scale(1);opacity:0}20%{-webkit-t
 
 
 
+@media (max-width: 575.98px) {
+.video-btn{
+  top: 0;
+    left: 50%;
+}
+.video-btn svg{
+  width: 50px;
+  height: 50px;
+}
+.tooth-svg{
+      width: 100px;
+    height: 100px;
+}
+.about-imgs{
+  min-height: 245px;
+}
+.img-main{
+  display: none;
+}
+.accent-box{
+  display: none;
+}
+.img-sec{
+  width: 100%;
+}
+.years-tag{
+  bottom: -55px;
+}
+.badge-logo{
+      top: 15%;
+    left: 40px;
+    width: 60px;
+    height: 60px;
+}
+}
