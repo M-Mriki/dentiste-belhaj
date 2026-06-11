@@ -578,4 +578,10 @@ squares{0%{-webkit-transform:scale(1);transform:scale(1);opacity:0}20%{-webkit-t
     width: 60px;
     height: 60px;
 }
+select{
+  height: 42px;
+}
+input[type="date"]{
+  height: 42px;
+} 
 }
