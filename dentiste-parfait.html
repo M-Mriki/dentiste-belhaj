@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>DentistePerfait — Cabinet Dentaire</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="assets/css/font-awesome-all.css" />
-    <!-- <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css" /> -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
-
-    <link rel="stylesheet" href="assets/css/style.css" />
-
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Cabinet dentaire à Fès : soins dentaires, implants, orthodontie et urgences 24h/24. Réservez votre consultation en ligne avec le Dr Belhaj Lakhdar Simohamed." />
+<meta property="og:title" content="DentisteParfait — Cabinet dentaire à Fès" />
+<meta property="og:description" content="Cabinet dentaire à Fès : soins dentaires, implants, orthodontie et urgences 24h/24. Réservez votre consultation en ligne." />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="fr_FR" />
+<meta property="og:url" content="dentiste-parfait.html" />
+<meta property="og:image" content="./images/deocteur.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/font-awesome-all.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+<link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Aller au contenu</a>
 
-<!-- NAV -->
-<nav>
-  <div class="logo"><a href="">Dr Belhaj Lakhdar <span>Simohamed</span></a></div>
-  <ul class="nav-links">
+  <!-- NAV -->
+  <nav role="navigation" aria-label="Navigation principale">
+    <div class="logo"><a href="">Dr Belhaj Lakhdar <span>Simohamed</span></a></div>
+    <ul class="nav-links">
     <li><a href="#about">À propos</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#galleryG">Galerie</a></li>
@@ -25,8 +32,10 @@
     <li><a href="#booking">Contact</a></li>
     <li><a href="#localisation">localisation</a></li>
   </ul>
-  <button class="nav-cta" onclick="document.getElementById('booking').scrollIntoView({behavior:'smooth'})">Prendre RDV</button>
+  <button type="button" class="nav-cta" onclick="document.getElementById('booking').scrollIntoView({behavior:'smooth'})">Prendre RDV</button>
 </nav>
+
+<main id="main-content">
 
 <!-- HERO -->
 <section class="hero">
@@ -42,7 +51,7 @@
   </div>
   <div class="hero-visual">
     <div class="video-btn">
-                        <a href="https://www.youtube.com/watch?v=nfP5N9Yc72A&amp;t=28s" data-fancybox="Video-hp" data-caption="">
+                        <a href="https://www.youtube.com/watch?v=nfP5N9Yc72A&amp;t=28s" data-fancybox="Video-hp" data-caption="" aria-label="Voir la vidéo du cabinet">
 <svg width="100" height="100" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
   <circle cx="12" cy="12" r="10" stroke="#2A7F6F" stroke-width="2"/>
   <path d="M9.5 8.5L16 12L9.5 15.5V8.5Z" fill="#2A7F6F"/>
@@ -52,7 +61,7 @@
                         </a>
                     </div>
     <div class="hero-card ">
-      <div class="hero-img-bg"><img src="./images/deocteur.jpg" alt=""></div>
+      <div class="hero-img-bg"><img src="./images/deocteur.jpg" alt="Docteur Belhaj Lakhdar Simohamed" fetchpriority="high" decoding="async" /></div>
       <svg class="tooth-svg" width="155" height="175" viewBox="0 0 160 180" fill="none">
         <path d="M80 10C45 10 15 35 15 65c0 25 10 45 20 65s20 40 30 40c7 0 10-12 15-25 5 13 8 25 15 25 10 0 20-20 30-40s20-40 20-65C145 35 115 10 80 10Z" fill="white" stroke="rgba(42,127,111,.28)" stroke-width="2"/>
         <path d="M55 25c-10 5-23 20-27 35" stroke="rgba(42,127,111,.18)" stroke-width="1.5" stroke-linecap="round"/>
@@ -71,7 +80,7 @@
     <div class="about-imgs">
       <div class="accent-box"></div>
       <div class="img-main">
-        <img src="./images/woman-patient-dentist.jpg" alt="Dentiste souriant"/>
+        <img src="./images/woman-patient-dentist.jpg" alt="Dentiste souriant" loading="lazy" decoding="async" />
       </div>
       <div class="badge-logo">
         <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -81,7 +90,7 @@
         </svg>
       </div>
       <div class="img-sec">
-        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80" alt="Dentiste souriant"/>
+        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80" alt="Patient et dentiste souriant" loading="lazy" decoding="async" />
       </div>
       <div class="years-tag">
         <div class="years-num">+8</div>
@@ -127,7 +136,7 @@
 
     <div class="svc-card reveal">
       <div class="svc-img">
-        <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=600&q=80" alt="Dentisterie générale"/>
+        <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=600&q=80" alt="Dentisterie générale" loading="lazy" decoding="async"/>
         <svg class="svc-wave" viewBox="0 0 400 60" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="width:100%;height:50px">
           <path d="M0 30 Q100 0 200 30 Q300 60 400 30 L400 60 L0 60Z" fill="white"/>
         </svg>
@@ -142,7 +151,7 @@
 
     <div class="svc-card reveal">
       <div class="svc-img">
-        <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=600&q=80" alt="Dentisterie esthétique"/>
+        <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=600&q=80" alt="Dentisterie esthétique" loading="lazy" decoding="async"/>
         <svg class="svc-wave" viewBox="0 0 400 60" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="width:100%;height:50px">
           <path d="M0 30 Q100 0 200 30 Q300 60 400 30 L400 60 L0 60Z" fill="white"/>
         </svg>
@@ -157,7 +166,7 @@
 
     <div class="svc-card reveal">
       <div class="svc-img">
-        <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&q=80" alt="Dentisterie restauratrice"/>
+        <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&q=80" alt="Dentisterie restauratrice" loading="lazy" decoding="async"/>
         <svg class="svc-wave" viewBox="0 0 400 60" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="width:100%;height:50px">
           <path d="M0 30 Q100 0 200 30 Q300 60 400 30 L400 60 L0 60Z" fill="white"/>
         </svg>
@@ -172,7 +181,7 @@
 
     <div class="svc-card reveal">
       <div class="svc-img">
-        <img src="https://images.unsplash.com/photo-1571772996211-2f02c9727629?w=600&q=80" alt="Orthodontie"/>
+        <img src="https://images.unsplash.com/photo-1571772996211-2f02c9727629?w=600&q=80" alt="Orthodontie" loading="lazy" decoding="async"/>
         <svg class="svc-wave" viewBox="0 0 400 60" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="width:100%;height:50px">
           <path d="M0 30 Q100 0 200 30 Q300 60 400 30 L400 60 L0 60Z" fill="white"/>
         </svg>
@@ -187,7 +196,7 @@
 
     <div class="svc-card reveal">
       <div class="svc-img">
-        <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=600&q=80" alt="Implants dentaires"/>
+        <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=600&q=80" alt="Implants dentaires" loading="lazy" decoding="async"/>
         <svg class="svc-wave" viewBox="0 0 400 60" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="width:100%;height:50px">
           <path d="M0 30 Q100 0 200 30 Q300 60 400 30 L400 60 L0 60Z" fill="white"/>
         </svg>
@@ -202,7 +211,7 @@
 
     <div class="svc-card reveal">
       <div class="svc-img">
-        <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=600&q=80" alt="Urgences dentaires"/>
+        <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=600&q=80" alt="Urgences dentaires" loading="lazy" decoding="async"/>
         <svg class="svc-wave" viewBox="0 0 400 60" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="width:100%;height:50px">
           <path d="M0 30 Q100 0 200 30 Q300 60 400 30 L400 60 L0 60Z" fill="white"/>
         </svg>
@@ -243,14 +252,14 @@
     <div class="gal-item">
        <a data-fancybox="gallery" data-caption="Résultat — Sourire éclatant de nos patients2" href="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=500&q=80">
 
-         <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=500&q=80" alt="Équipement"/>
+         <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=500&q=80" alt="Équipement" loading="lazy" decoding="async"/>
          <div class="gal-overlay"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
         </a>
     </div>
     <div class="gal-item">
           <a data-fancybox="gallery" data-caption="Résultat — Sourire éclatant de nos patients2" href="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=500&q=80">
 
-            <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=500&q=80" alt="Consultation"/>
+            <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=500&q=80" alt="Consultation" loading="lazy" decoding="async"/>
             <div class="gal-overlay"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
           </a>
     </div>
@@ -258,21 +267,21 @@
     <div class="gal-item">
           <a data-fancybox="gallery" data-caption="Résultat — Sourire éclatant de nos patients2" href="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=500&q=80">
 
-            <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=500&q=80" alt="Sourire patient"/>
+            <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=500&q=80" alt="Sourire patient" loading="lazy" decoding="async"/>
             <div class="gal-overlay"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
           </a>
     </div>
   </div>
 </section>
 <section class="how-section">
-  <h2 class="how-title">How We Work</h2>
+  <h2 class="how-title">Comment nous travaillons</h2>
  
   <div class="steps">
  
     <!-- STEP 1 -->
     <div class="step">
       <div class="step-img-wrap">
-        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80" alt="Make Appointment"/>
+        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80" alt="Prise de rendez-vous" loading="lazy" decoding="async"/>
         <div class="step-num">01</div>
       </div>
       <div class="step-name">Make Appointment</div>
@@ -298,7 +307,7 @@
     <!-- STEP 2 -->
     <div class="step">
       <div class="step-img-wrap">
-        <img src="./images/process-2.jpg" alt="Get Consultant"/>
+        <img src="./images/process-2.jpg" alt="Consultation" loading="lazy" decoding="async"/>
         <div class="step-num">02</div>
       </div>
       <div class="step-name">Get Consultant</div>
@@ -324,7 +333,7 @@
     <!-- STEP 3 -->
     <div class="step">
       <div class="step-img-wrap">
-        <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=400&q=80" alt="Take Treatment"/>
+        <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=400&q=80" alt="Réception des soins" loading="lazy" decoding="async"/>
         <div class="step-num">03</div>
       </div>
       <div class="step-name">Take Treatment</div>
@@ -350,7 +359,7 @@
     <!-- STEP 4 -->
     <div class="step">
       <div class="step-img-wrap">
-        <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=400&q=80" alt="Get Relief"/>
+        <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=400&q=80" alt="Soulagement" loading="lazy" decoding="async"/>
         <div class="step-num">04</div>
       </div>
       <div class="step-name">Get Relief</div>
@@ -469,26 +478,26 @@
         <div><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2A7F6F" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-5"/></svg> Disponible Lun–Ven 9h–18h30 · Sam 9h–13h</div>
       </div>
     </div>
-    <div class="bk-form">
+      <form class="bk-form" id="bookingForm" novalidate>
       <div class="bk-title">Votre rendez-vous</div>
-      <div class="fr"><label>Nom complet</label>
-        <input type="text" id="fullname" placeholder="Prénom Nom"/>
-          <small class="error"></small>
+      <div class="fr"><label for="fullname">Nom complet</label>
+        <input type="text" id="fullname" name="fullname" autocomplete="name" placeholder="Prénom Nom" aria-describedby="fullnameError" />
+          <small class="error" id="fullnameError" aria-live="polite"></small>
       </div>
       <div class="fr2">
-        <div class="fr"><label>Téléphone</label>
-          <input type="tel" id="phone" placeholder="+212 6XX XXX XXX"/>
-            <small class="error"></small>
+        <div class="fr"><label for="phone">Téléphone</label>
+          <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+212 6XX XXX XXX" aria-describedby="phoneError" />
+            <small class="error" id="phoneError" aria-live="polite"></small>
 
         </div>
-        <div class="fr"><label>Email</label>
-          <input type="email" id="email" placeholder="vous@email.com"/>
-            <small class="error"></small>
+        <div class="fr"><label for="email">Email</label>
+          <input type="email" id="email" name="email" autocomplete="email" placeholder="vous@email.com" aria-describedby="emailError" />
+            <small class="error" id="emailError" aria-live="polite"></small>
 
         </div>
       </div>
-      <div class="fr"><label>Service souhaité</label>
-        <select id="service">
+      <div class="fr"><label for="service">Service souhaité</label>
+        <select id="service" name="service" aria-describedby="serviceError">
             <option value="">---Service souhaité---</option>
           <option>Consultation générale</option>
           <option>Blanchiment dentaire</option>
@@ -497,19 +506,19 @@
           <option>Dentisterie esthétique</option>
           <option>Urgence dentaire</option>
         </select>
-          <small class="error"></small>
+          <small class="error" id="serviceError" aria-live="polite"></small>
 
       </div>
       <div class="fr2">
-        <div class="fr"><label>Date</label><input id="date" type="date"/>  <small class="error"></small>
+        <div class="fr"><label for="date">Date</label><input id="date" name="date" type="date" aria-describedby="dateError" />  <small class="error" id="dateError" aria-live="polite"></small>
 </div>
-        <div class="fr"><label>Heure</label>
-          <select id="time">
+        <div class="fr"><label for="time">Heure</label>
+          <select id="time" name="time" aria-describedby="timeError">
                         <option value="">---Heure---</option>
             <option>09:00</option><option>10:00</option><option>11:00</option>
             <option>14:00</option><option>15:00</option><option>16:00</option><option>17:00</option>
           </select>
-            <small class="error"></small>
+            <small class="error" id="timeError" aria-live="polite"></small>
 
         </div>
       </div>
@@ -517,15 +526,15 @@
         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         Envoyer sur WhatsApp
       </button>
-    </div>
+    </form>
   </div>
 </section>
-<div id="successPopup" class="popup">
+<div id="successPopup" class="popup" role="dialog" aria-modal="true" aria-labelledby="successTitle">
   <div class="popup-content">
-    <div class="icon">🦷</div>
-    <h2>Merci !</h2>
+    <div class="icon" aria-hidden="true">🦷</div>
+    <h2 id="successTitle">Merci !</h2>
     <p>Votre rendez-vous a été confirmé avec succès.</p>
-    <button id="closePopup">Fermer</button>
+    <button id="closePopup" type="button">Fermer</button>
   </div>
 </div>
 
@@ -582,7 +591,7 @@
         </div>
         <div>
           <div style="font-size:.78rem;font-weight:500;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;margin-bottom:.3rem">Email</div>
-          <div style="font-size:.92rem;font-weight:500;color:var(--deep)">contact@dentistepar fait.ma</div>
+          <div style="font-size:.92rem;font-weight:500;color:var(--deep)">contact@dentisteparfait.ma</div>
           <div style="font-size:.85rem;color:var(--muted);font-weight:300">Réponse sous 2h</div>
         </div>
       </div>
@@ -606,7 +615,7 @@
       <!-- Overlay badge -->
       <div style="position:absolute;top:1rem;left:1rem;background:var(--white);border-radius:50px;padding:.55rem 1.1rem;display:flex;align-items:center;gap:.6rem;box-shadow:0 4px 16px rgba(26,35,50,.12);font-size:.82rem;font-weight:500;color:var(--deep)">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="#2A7F6F"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-        DentistePar fait — Casablanca
+        DentisteParfait — Casablanca
       </div>
     </div>
  
@@ -618,18 +627,16 @@
   <div style="text-align:center">
     <p>Av.Des Forces Arméés Royal a cote Café Blue Babel à Fès
   <strong>05 32 08 67 17</strong></p>
-    <p style="margin-top:.3rem">contact@dentistepa rfait.ma</p>
+    <p style="margin-top:.3rem">contact@dentisteparfait.ma</p>
   </div>
-  <p>© 2026 DentistePa rfait</p>
+  <p>© 2026 DentisteParfait</p>
 </footer>
 
 
 
+</main>
 
-<script src="/assets/js/jquery-3.1.1.min.js"></script>
-<!-- <script src="/assets/js/jquery.fancybox.min.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-<script src="/assets/js/Script.js"></script>
 
 <script>
 
@@ -878,13 +885,13 @@ _Message envoyé depuis le site web du cabinet Dr Belhaj Lakhdar Simohamed_`;
   btnOk.addEventListener('click', function () {
     btn.classList.add('sending');
     popup.classList.remove('show');
-    window.open(waUrl, '_blank');
+    window.open(waUrl, '_blank', 'noopener,noreferrer');
 
     // Reset form after short delay
     setTimeout(() => {
-      document.querySelector('.bk-form').reset();
+      document.getElementById('bookingForm').reset();
       document.querySelectorAll('.error').forEach(e => e.textContent = '');
-      document.querySelectorAll('.input-error').forEach(e => e.classList.remove('input-error'));
+      document.querySelectorAll('.input-error').forEach(el => el.classList.remove('input-error'));
       btn.classList.remove('sending');
     }, 800);
   });
@@ -1109,7 +1116,7 @@ _Message envoyé depuis le site web du cabinet Dr Belhaj Lakhdar Simohamed_`;
 </style>
 
 <!-- Bubble button -->
-<button id="chat-bubble" aria-label="Ouvrir le chat">
+<button id="chat-bubble" aria-label="Ouvrir le chat" aria-controls="chat-window" aria-expanded="false" type="button">
   <span id="chat-notif">1</span>
   <svg class="icon-chat" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
     <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
@@ -1129,7 +1136,7 @@ _Message envoyé depuis le site web du cabinet Dr Belhaj Lakhdar Simohamed_`;
     </div>
   </div>
 
-  <div class="chat-messages" id="chat-messages"></div>
+  <div class="chat-messages" id="chat-messages" aria-live="polite"></div>
 
   <div class="quick-replies" id="quick-replies">
     <button class="qr-btn" data-msg="Je veux prendre rendez-vous">📅 Prendre RDV</button>
@@ -1140,8 +1147,8 @@ _Message envoyé depuis le site web du cabinet Dr Belhaj Lakhdar Simohamed_`;
   </div>
 
   <div class="chat-input-bar">
-    <input id="chat-input" type="text" placeholder="Posez votre question…" autocomplete="off" maxlength="300"/>
-    <button id="chat-send" aria-label="Envoyer">
+    <input id="chat-input" type="text" placeholder="Posez votre question…" autocomplete="off" maxlength="300" aria-label="Votre message"/>
+    <button id="chat-send" aria-label="Envoyer" type="button">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
         <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
       </svg>
@@ -1260,7 +1267,7 @@ _Message envoyé depuis le site web du cabinet Dr Belhaj Lakhdar Simohamed_`;
     },
     {
       keys: ['appeler','téléphone','numéro','contact','joindre','appel'],
-      reply: `📞 <strong>Contactez-nous</strong><br/><br/>• 📱 <strong>Téléphone</strong> : +212 522 XXX XXX<br/>• 📧 <strong>Email</strong> : contact@dentistepar fait.ma<br/>• 🚨 <strong>Urgences 24h/24</strong> : +212 522 XXX XXX<br/><br/>⏰ Horaires téléphoniques :<br/>Lun–Ven : 9h–18h30 | Sam : 9h–13h`,
+      reply: `📞 <strong>Contactez-nous</strong><br/><br/>• 📱 <strong>Téléphone</strong> : +212 522 XXX XXX<br/>• 📧 <strong>Email</strong> : contact@dentisteparfait.ma<br/>• 🚨 <strong>Urgences 24h/24</strong> : +212 522 XXX XXX<br/><br/>⏰ Horaires téléphoniques :<br/>Lun–Ven : 9h–18h30 | Sam : 9h–13h`,
       qr: ['📅 Prendre RDV', '📍 Notre adresse', '🕐 Nos horaires']
     },
     {
@@ -1335,6 +1342,7 @@ _Message envoyé depuis le site web du cabinet Dr Belhaj Lakhdar Simohamed_`;
     isOpen = !isOpen;
     bubble.classList.toggle('open', isOpen);
     win.classList.toggle('open', isOpen);
+    bubble.setAttribute('aria-expanded', String(isOpen));
 
     if (isOpen) {
       if (notif) notif.remove();
