@@ -219,7 +219,7 @@ h1 em{font-style:italic;color:var(--teal)}
   display:flex;align-items:center;justify-content:center;
   box-shadow:0 4px 14px rgba(42,127,111,.15);
 }
-.svc-body{padding:2.5rem 1.5rem 1.8rem;text-align:center}
+.svc-body{padding:0.5rem 1.5rem 1.8rem;text-align:center}
 .svc-name{font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--deep);margin-bottom:.55rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em}
 .svc-desc{font-size:.84rem;color:var(--muted);line-height:1.65;font-weight:300;margin-bottom:1rem}
 .svc-link{display:inline-flex;align-items:center;gap:.5rem;font-size:.83rem;font-weight:500;color:var(--teal);text-decoration:none;border-bottom:1px solid rgba(42,127,111,.3);padding-bottom:1px}
