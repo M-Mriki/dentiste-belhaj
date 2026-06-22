@@ -17,9 +17,11 @@ Implants, Blanchiment & Urgences Dentaires
 </title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="assets/css/font-awesome-all.css" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" media="print" onload="this.media='all'" />
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" /></noscript>
 <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
@@ -641,7 +643,7 @@ Implants, Blanchiment & Urgences Dentaires
 </main>
 
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-<script src="./assets/js/Script.js"></script>
+<script src="./assets/js/Script.js" defer></script>
 
 <script>
 
@@ -700,10 +702,22 @@ Fancybox.bind('[data-fancybox="Video-hp"]', {
 });
 const obs=new IntersectionObserver(entries=>{
   entries.forEach((e,i)=>{
-    if(e.isIntersecting){setTimeout(()=>e.target.classList.add('in'),i*70);obs.unobserve(e.target)}
+    if(e.isIntersecting){
+      setTimeout(()=>e.target.classList.add('in'),i*70);
+      obs.unobserve(e.target);
+    }
   });
-},{threshold:.1});
-document.querySelectorAll('.reveal').forEach(r=>obs.observe(r));
+},{threshold:0,rootMargin:'0px 0px -40px 0px'});
+
+document.querySelectorAll('.reveal').forEach(r=>{
+  // Si l'élément est déjà visible au chargement → afficher immédiatement
+  const rect=r.getBoundingClientRect();
+  if(rect.top<window.innerHeight){
+    r.classList.add('in');
+  } else {
+    obs.observe(r);
+  }
+});
 </script>
 
 
