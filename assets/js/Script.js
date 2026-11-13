@@ -1,3 +1,49 @@
+/* ── Mobile navigation and back-to-top ── */
+const menuToggle = document.querySelector('.nav-menu-toggle');
+const primaryMenu = document.getElementById('primary-menu');
+
+if (menuToggle && primaryMenu) {
+  function closeMenu() {
+    menuToggle.setAttribute('aria-expanded', 'false');
+    menuToggle.setAttribute('aria-label', 'Ouvrir le menu');
+    primaryMenu.classList.remove('is-open');
+  }
+
+  menuToggle.addEventListener('click', function () {
+    const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+    menuToggle.setAttribute('aria-expanded', String(!isExpanded));
+    menuToggle.setAttribute('aria-label', isExpanded ? 'Ouvrir le menu' : 'Fermer le menu');
+    primaryMenu.classList.toggle('is-open', !isExpanded);
+  });
+
+  primaryMenu.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', closeMenu);
+  });
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') closeMenu();
+  });
+
+  window.addEventListener('resize', function () {
+    if (window.innerWidth > 760) closeMenu();
+  });
+}
+
+const scrollToTop = document.querySelector('.scroll-to-top');
+
+if (scrollToTop) {
+  function updateScrollToTopVisibility() {
+    scrollToTop.classList.toggle('is-visible', window.scrollY > 300);
+  }
+
+  window.addEventListener('scroll', updateScrollToTopVisibility, { passive: true });
+  updateScrollToTopVisibility();
+
+  scrollToTop.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
+
 /* ── Form popup validation ── */
 document.querySelector('.btn-sub')?.addEventListener('click', function () {
 
